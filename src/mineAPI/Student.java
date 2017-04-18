@@ -9,6 +9,12 @@ public class Student {
     private char gender; //性别
     private String grade;
 
+    public Student(String name,int age,char gender,String grade){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.grade = grade;
+    }
     @Override
     public boolean equals(Object obj){  //覆盖的equals方法
         if (obj == null) return false;
@@ -33,5 +39,9 @@ public class Student {
         hash = 17 * hash + this.gender;
         hash = 17 * hash + (this.grade!=null?this.grade.hashCode():0);
         return hash;
+    }
+    @Override
+    public String toString(){
+        return "学生姓名："+name+",年龄："+age+",性别："+gender+",班级："+grade;
     }
 }
