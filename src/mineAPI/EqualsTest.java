@@ -1,8 +1,5 @@
 package mineAPI;
 
-/**
- * Created by hp on 2017/4/18.
- */
 public class EqualsTest {
     public static void main(String[] arg) {
         Object obj = new Object();
